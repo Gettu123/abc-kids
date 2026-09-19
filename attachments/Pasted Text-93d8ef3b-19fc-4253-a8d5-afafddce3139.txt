@@ -1,0 +1,42 @@
+Actúa como un desarrollador Senior experto en Frontend (HTML5, CSS3, JavaScript/TypeScript) y UX/UI infantil. Necesito que programes el código completo y listo para producción (Single Page Application o modular en archivos index.html, style.css, app.js y locales.js) de un juego educativo interactivo para niños de 4 a 5 años, fácil de subir y ejecutar en GitHub Pages.
+
+--- REQUERIMIENTOS DE ARQUITECTURA Y LÓGICA ---
+
+1. SOPORTE MULTI-IDIOMA EN TIEMPO REAL (ESPAÑOL VENEZUELA / PORTUGUÉS):
+   - Sistema de internacionalización (i18n) sencillo con soporte para dos idiomas:
+     * Español de Venezuela (ES-VE): usar modismos, vocabulario y ejemplos amigables adaptados a Venezuela (ej. "¡Naguará!", "Chamo/Chama", "Cotorra", "Araguato", "A de Auyama").
+     * Portugués (PT): vocabulario infantil estándar para hablantes de portugués (ej. "Muito bem!", "Menino/Menina", "A de Abacaxi").
+   - Selector de idioma visible en la pantalla inicial y dentro del área de Ajustes Parentales.
+   - Todo el contenido, instrucciones habladas/simuladas por síntesis de voz (Web Speech API si está disponible) y textos de la interfaz deben actualizarse dinámicamente según el idioma seleccionado.
+
+2. REGISTRO Y ADAPTACIÓN DINÁMICA (ONBOARDING INTERACTIVO):
+   - Al iniciar, pedir: Nombre del niño/a, Género (Niño / Niña) e Idioma preferido.
+   - Extraer automáticamente las vocales y consonantes que forman el nombre ingresado para usarlas en un mini-juego personalizado ("Aprende las letras de tu nombre" / "Aprende as letras do teu nome").
+   - Adaptación de Interfaz: Cambiar paleta de colores, acompañante/mascota animada y efectos visuales según el género seleccionado de forma alegre y no estereotipada.
+
+3. MÓDULOS DE APRENDIZAJE (MENÚ PRINCIPAL DIVERTIDO):
+   Organiza la pantalla principal en 5 áreas visuales y muy intuitivas:
+   - ÁREA 1: Memoria / Memória. Juego de parejas (cards) con animaciones de giro y sonidos.
+   - ÁREA 2: Conteo de Números / Contagem de Números. Contar objetos de 1 a 10 interactivos.
+   - ÁREA 3: Mi Nombre y las Letras / Meu Nome e as Letras. Reconocimiento de vocales, consonantes y armar su propio nombre mediante drag-and-drop o clics.
+   - ÁREA 4: Figuras Geométricas / Formas Geométricas. Identificación de formas primarias (Círculo, Cuadrado, Triángulo, Rectángulo, Estrella).
+   - ÁREA 5: Animales y su Letra Inicial / Animais e a sua Letra Inicial. Asociación de animales con la letra inicial correspondiente (ej. en ES-VE: L de Lapa / A de Araguato; en PT: L de Leão / A de Arara).
+
+4. SISTEMA DE PERFILES Y PROGRESO (LOCALSTORAGE):
+   - Soporte para múltiples usuarios locales (los niños seleccionan su perfil).
+   - Guardar progreso real (0% al 100%) por cada módulo y promedio general.
+   - Histórico de sesiones, tiempo de juego acumulado y medallas/logros obtenidos.
+   - Guardar todo en LocalStorage para que persista al recargar la página.
+
+5. ÁREA DE AJUSTES Y CONTROL PARENTAL (TIEMPO DE PANTALLA):
+   - Botón de "Ajustes Parentales" protegido por patrón visual o contraseña simple de suma (ej. "¿Cuánto es 3 + 2?").
+   - Configuración de Límite de Tiempo de Pantalla (ej. 10, 20, 30 min).
+   - Cambio de idioma global del sistema.
+   - Temporizador en segundo plano. Al agotarse el tiempo, la pantalla se bloquea suavemente mostrando un mensaje divertido para descansar la vista.
+
+6. DISEÑO UI/UX INFANTIL:
+   - Botones grandes, bordes redondeados, colores vibrantes, tipografía legible.
+   - Animaciones CSS fluidas (bounce, pulse) y retroalimentación positiva (confeti, caritas felices).
+   - Interfaz intuitiva lista para pantallas táctiles y escritorio.
+
+Proporciona el código organizado, limpio, comentado y estructurado para subir directamente a un repositorio de GitHub.
